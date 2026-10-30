@@ -130,6 +130,7 @@ const PATTERNS: [RegExp, (m: RegExpMatchArray) => string][] = [
     (m) => i18n.t("errors.db.outOfFence", { dist: m[1], radius: m[2] })],
   [/^Horario no válido[: (]+día (\d+)\)?$/, (m) => i18n.t("errors.db.scheduleInvalidDay", { day: m[1] })],
   [/^Tramo horario no válido \(día (\d+)\)/, (m) => i18n.t("errors.db.scheduleSlotInvalid", { day: m[1] })],
+  [/^Máximo 20 plantillas de turno/, () => i18n.t("shiftsWeb.tplMax")],
   [/^Invalid close time/, () => i18n.t("errors.db.closeBeforeOpen")],
   [/^Invalid transition/i, () => i18n.t("errors.db.invalidTransition")],
   [/^Invalid ts .*Must be greater/i, () => i18n.t("errors.db.alreadyRegistered")],
