@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminar cuenta · Jornify</title>
+<meta name="description" content="Cómo eliminar tu cuenta de Jornify y qué datos se borran.">
+<link rel="alternate" hreflang="es" href="https://jornify.netlify.app/eliminar-cuenta/">
+<link rel="alternate" hreflang="en" href="https://jornify.netlify.app/en/delete-account/">
+<link rel="alternate" hreflang="fr" href="https://jornify.netlify.app/fr/supprimer-compte/">
+<link rel="alternate" hreflang="x-default" href="https://jornify.netlify.app/eliminar-cuenta/">
+<style>
+  :root {
+    --bg: #f6f8fb; --card: #ffffff; --text: #0f172a; --muted: #5b6475;
+    --line: #e4e8ef; --brand: #63a1f6; --link: #1f5fc4; --soft: #eef4fe;
+    --danger: #c62828; --dangerSoft: #fdecec;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  header { background: var(--card); border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  header img { height: 26px; display: block; }
+  header nav a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 16px; }
+  header nav a:hover { color: var(--link); }
+  main { padding: 36px 0 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 19px; margin: 0 0 12px; letter-spacing: -0.01em; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px 22px 18px; margin-bottom: 18px; }
+  ol, ul { padding-left: 22px; margin: 0 0 6px; }
+  li { margin: 6px 0; }
+  a { color: var(--link); }
+  .btn {
+    display: inline-block; background: var(--danger); color: #fff; text-decoration: none;
+    font-weight: 600; padding: 12px 20px; border-radius: 10px; margin: 6px 0 10px;
+  }
+  .btn:hover { background: #a91f1f; }
+  .note { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
+  .tag.del { background: var(--dangerSoft); color: var(--danger); }
+  .tag.keep { background: var(--soft); color: var(--link); }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; padding: 24px 0 40px; }
+  @media (max-width: 620px) { .cols { grid-template-columns: 1fr; } h1 { font-size: 25px; } header nav a { margin-left: 10px; } }
+
+  .langs { display: flex; gap: 4px; margin-left: 16px; }
+  header nav .langs a { margin-left: 0; padding: 2px 7px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; font-weight: 600; }
+  header nav .langs a[aria-current="true"] { background: var(--soft); color: var(--link); border-color: #d8e6fc; }
+  header nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .tr-note { background: #fff8e6; border: 1px solid #f5e1a6; border-radius: 12px; padding: 12px 16px; font-size: 14px; color: #6b5310; margin: 0 0 24px; }
+  @media (max-width: 520px) { header .wrap { height: auto; padding-top: 10px; padding-bottom: 10px; gap: 8px; } .langs { margin-left: 10px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="../logo.png" alt="Jornify">
+    <nav>
+      <a href="../privacidad/">Privacidad</a>
+      <a href="../eliminar-cuenta/">Eliminar cuenta</a>
+      <a href="../condiciones/">Condiciones</a>
+      <span class="langs"><a href="../eliminar-cuenta/" hreflang="es" lang="es" aria-current="true">ES</a><a href="../en/delete-account/" hreflang="en" lang="en">EN</a><a href="../fr/supprimer-compte/" hreflang="fr" lang="fr">FR</a></span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Eliminar tu cuenta de Jornify</h1>
+  <p class="lead">Jornify es una app de Hania Digital Labs. Puedes eliminar tu cuenta y tus datos personales cuando quieras, desde la app o desde esta página.</p>
+
+  <div class="card">
+    <h2>Opción 1 · Desde la app</h2>
+    <ol>
+      <li>Abre Jornify e inicia sesión.</li>
+      <li>En la pantalla principal, toca el <strong>icono de usuario</strong> (arriba a la derecha) para abrir <strong>Ajustes</strong>.</li>
+      <li>Pulsa <strong>Eliminar mi cuenta</strong> y confirma.</li>
+    </ol>
+    <p class="note">El acceso se bloquea en ese momento. Si eres el administrador de una empresa con empleados, la app te pedirá disolver la empresa antes de eliminar tu cuenta.</p>
+  </div>
+
+  <div class="card">
+    <h2>Opción 2 · Sin la app</h2>
+    <p>Envíanos un correo desde la dirección con la que te registraste. Ya lleva el asunto y el texto preparados:</p>
+    <a class="btn" href="mailto:eliashania@gmail.com?subject=Jornify%20-%20Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta&amp;body=Hola%2C%0A%0ASolicito%20eliminar%20mi%20cuenta%20de%20Jornify%20y%20mis%20datos%20personales.%0A%0AEmail%20de%20la%20cuenta%3A%20%0AEmpresa%20(si%20la%20sabes)%3A%20%0A%0AGracias.">Solicitar eliminación por correo</a>
+    <p class="note">Si el botón no abre tu correo, escribe a <a href="mailto:eliashania@gmail.com">eliashania@gmail.com</a> con el asunto «Eliminar cuenta de Jornify». Por seguridad, comprobaremos que la petición viene del correo de la cuenta. La tramitamos en un máximo de 30 días.</p>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <span class="tag del">Se elimina</span>
+      <ul>
+        <li>Tu acceso a la app (correo, contraseña e inicio de sesión con Google).</li>
+        <li>Los datos de tu cuenta que no hay obligación legal de guardar.</li>
+        <li>Tus sesiones abiertas en todos los dispositivos.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag keep">Se conserva 4 años</span>
+      <ul>
+        <li>Tus registros de jornada (fichajes, horas y ubicación de cada fichaje) e incidencias, seudonimizados: tu empresa los verá como «Empleado eliminado».</li>
+        <li>Tu nombre, DNI/NIE y correo, guardados aparte y bloqueados.</li>
+      </ul>
+      <p class="note">La ley obliga a la empresa a conservar el registro de jornada durante 4 años (art. 34.9 del Estatuto de los Trabajadores). Tus datos identificativos solo se facilitan a la Inspección de Trabajo o a los tribunales si los piden. A los 4 años de tu último fichaje se borran automáticamente. Si no tienes ningún fichaje, se borra todo en el momento.</p>
+    </div>
+  </div>
+
+  <p class="note">Más detalles en la <a href="../privacidad/">política de privacidad</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">Jornify · Hania Digital Labs · <a href="mailto:eliashania@gmail.com">eliashania@gmail.com</a></div>
+</footer>
+</body>
+</html>

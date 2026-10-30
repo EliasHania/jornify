@@ -10,9 +10,10 @@ export const PUBLIC_APP_URL = trimSlash(
     (typeof window !== "undefined" ? window.location.origin : "")
 );
 
-/** Base de las páginas legales (privacidad, condiciones, borrado de cuenta). */
+/** Base de las páginas legales (privacidad, condiciones, borrado de cuenta).
+ *  Se publican con el propio panel (carpeta public/), así que por defecto es el mismo dominio. */
 export const LEGAL_BASE_URL = trimSlash(
-  (import.meta.env.VITE_LEGAL_BASE_URL as string | undefined) || "https://eliashania.netlify.app/jornify"
+  (import.meta.env.VITE_LEGAL_BASE_URL as string | undefined) || PUBLIC_APP_URL || "https://jornify.netlify.app"
 );
 
 import { lang, type Lang } from "@/i18n";
