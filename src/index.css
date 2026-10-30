@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";  /* ruta desde index.css hasta tailwind.config.ts */
+
+/* lo demás igual */
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply antialiased m-0 p-0;
+    background-color: #f9fafb;
+    color: #020617;
+  }
+
+  html.dark body {
+    background-color: #050816;
+    color: #e5e7eb;
+  }
+}
+
+/* Desplegables nativos (<select>) legibles en modo oscuro: Windows/Chrome pinta
+   la lista con fondo blanco y el texto heredado es blanco */
+@layer base {
+  html.dark select {
+    color-scheme: dark;
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+  html.dark select option,
+  html.dark select optgroup {
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+  html:not(.dark) select option {
+    background-color: #ffffff;
+    color: #0f172a;
+  }
+}

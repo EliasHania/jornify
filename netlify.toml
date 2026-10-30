@@ -1,0 +1,26 @@
+# Netlify: despliegue del panel web de Jornify
+# Variables (Site settings → Environment variables):
+#   VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY, VITE_GOOGLE_MAPS_KEY, VITE_GOOGLE_MAPS_ID
+#   VITE_PUBLIC_APP_URL  → URL pública del panel (p. ej. https://jornify-panel.netlify.app). Se usa en los enlaces de Inspección.
+#   VITE_LEGAL_BASE_URL  → base de las páginas legales (por defecto https://eliashania.netlify.app/jornify)
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    Permissions-Policy = "camera=(self), microphone=(), geolocation=(self)"
+
+[[headers]]
+  for = "/inspeccion/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
